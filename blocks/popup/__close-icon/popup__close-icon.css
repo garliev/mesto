@@ -1,0 +1,23 @@
+.popup__close-icon {
+  width: 40.7px;
+  height: 40.7px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-top: -40.7px;
+  margin-right: -40.7px;
+}
+
+.popup__close-icon:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 320px) and (max-width: 510px) {
+  .popup__close-icon {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 13px;
+    margin-right: 0px;
+  }
+}
