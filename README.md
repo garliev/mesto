@@ -1,5 +1,7 @@
 # Проект 4: Место 
  
+[Линк на GitHub Pages](https://garliev.github.io/mesto/ "Нажимай уже")
+
 ### Обзор 
  
 - Технологии 
