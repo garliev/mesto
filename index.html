@@ -13,8 +13,8 @@
       <header class="header">
         <img class="header__logo" src="./images/LogoHeader.svg" alt="Логотип" />
       </header>
-      
-      <main>
+
+      <main class="content">
         <section class="profile content__section">
           <div class="profile__content">
             <img class="profile__avatar" src="./images/Kusto.jpg" alt="Кусто" />
@@ -22,13 +22,21 @@
               <div class="profile__group">
                 <h1 class="profile__name">Жак-Ив Кусто</h1>
                 <button
-                  class="js-profile__open-popup profile__edit-button"
+                  class="profile__edit-button"
+                  type="button"
+                  name="editFrofile"
+                  aria-label="Изменить профиль"
                 ></button>
               </div>
               <p class="profile__job">Исследователь океана</p>
             </div>
           </div>
-          <button class="profile__add-button"></button>
+          <button
+            class="profile__add-button"
+            type="button"
+            name="addNewProfile"
+            aria-label="Добавить профиль"
+          ></button>
         </section>
 
         <section class="elements content__section">
@@ -41,11 +49,11 @@
               />
               <div class="elements__group">
                 <h2 class="elements__title">Карачаевск</h2>
-                <img
+                <button
                   class="elements__pic"
-                  src="./images/heart.svg"
-                  alt="Сердце"
-                />
+                  aria-label="Лайк"
+                  type="button"
+                ></button>
               </div>
             </li>
             <li class="elements__card">
@@ -56,11 +64,11 @@
               />
               <div class="elements__group">
                 <h2 class="elements__title">Гора Эльбрус</h2>
-                <img
+                <button
                   class="elements__pic"
-                  src="./images/heart.svg"
-                  alt="Сердце"
-                />
+                  aria-label="Лайк"
+                  type="button"
+                ></button>
               </div>
             </li>
             <li class="elements__card">
@@ -71,11 +79,11 @@
               />
               <div class="elements__group">
                 <h2 class="elements__title">Домбай</h2>
-                <img
+                <button
                   class="elements__pic"
-                  src="./images/heart.svg"
-                  alt="Сердце"
-                />
+                  aria-label="Лайк"
+                  type="button"
+                ></button>
               </div>
             </li>
             <li class="elements__card">
@@ -86,11 +94,11 @@
               />
               <div class="elements__group">
                 <h2 class="elements__title">Гора Эльбрус</h2>
-                <img
+                <button
                   class="elements__pic"
-                  src="./images/heart.svg"
-                  alt="Сердце"
-                />
+                  aria-label="Лайк"
+                  type="button"
+                ></button>
               </div>
             </li>
             <li class="elements__card">
@@ -101,11 +109,11 @@
               />
               <div class="elements__group">
                 <h2 class="elements__title">Домбай</h2>
-                <img
+                <button
                   class="elements__pic"
-                  src="./images/heart.svg"
-                  alt="Сердце"
-                />
+                  aria-label="Лайк"
+                  type="button"
+                ></button>
               </div>
             </li>
             <li class="elements__card">
@@ -116,11 +124,11 @@
               />
               <div class="elements__group">
                 <h2 class="elements__title">Карачаево-Черкесск</h2>
-                <img
+                <button
                   class="elements__pic"
-                  src="./images/heart.svg"
-                  alt="Сердце"
-                />
+                  aria-label="Лайк"
+                  type="button"
+                ></button>
               </div>
             </li>
           </ul>
@@ -131,33 +139,32 @@
         <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
       </footer>
 
-      <section class="popup">
+      <div class="popup">
         <div class="popup__blackout"></div>
         <div class="popup__container">
-          <h2 class="popup__title">Редактировать профиль</h2>
-          <form class="popup__input-container">
-            <fieldset class="popup__input-items">
-              <input
-                type="text"
-                value="Жак-Ив Кусто"
-                class="popup__item popup__name-input"
-              />
-              <input
-                type="text"
-                value="Исследователь океана"
-                class="popup__item popup__job-input"
-              />
-            </fieldset>
-            <button type="submit" class="popup__button">Сохранить</button>
-          </form>
-
-          <img
+          <button
             class="popup__close-icon"
-            src="./images/CloseIcon.svg"
-            alt="закрыть попап"
-          />
+            aria-label="закрыть окно"
+            type="button"
+            name="closePopup"
+          ></button>
+          <h3 class="popup__title">Редактировать профиль</h3>
+          <form class="popup__input-container" method="GET" name="myForm">
+            <fieldset class="popup__input-items">
+              <input type="text" class="popup__item popup__name-input" />
+              <input type="text" class="popup__item popup__job-input" />
+            </fieldset>
+            <button
+              type="submit"
+              class="popup__button"
+              name="Save"
+              aria-label="Сохранить"
+            >
+              Сохранить
+            </button>
+          </form>
         </div>
-      </section>
+      </div>
     </div>
 
     <script src="./scripts/index.js"></script>

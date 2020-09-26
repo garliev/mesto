@@ -1,5 +1,5 @@
 .profile__job {
-  font-family: "Inter", "Arial", "sans-serif";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -10,10 +10,6 @@
   overflow: hidden;
 }
 
-textarea:focus,
-input:focus {
-  outline: none;
-}
 
 @media screen and (max-width: 583px) {
   .profile__job {

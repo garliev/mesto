@@ -6,13 +6,17 @@
   border: none;
   width: 358px;
   height: 14px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid;
+  border-color: rgba(0, 0, 0, .2);
+}
+
+.popup__name-input {
+  outline: none;
 }
 
 @media screen and (min-width: 320px) and (max-width: 510px) {
   .popup__name-input {
     width: 238px;
-    margin: 0;
     font-size: 14px;
     line-height: 17px;
     margin: 0 22px 30px;

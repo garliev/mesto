@@ -1,12 +1,23 @@
 .popup__close-icon {
   width: 40.7px;
   height: 40.7px;
-  position: absolute;
+  /* position: absolute;
   top: 0px;
-  right: 0px;
+  right: 0px; */
   margin-top: -40.7px;
-  margin-right: -40.7px;
+  margin-left: 430px;
+  background-image: url(../../../images/CloseIcon.svg);
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0;
+  background-color: transparent;
 }
+
+/*скорее всего проблема во флексах, попробовать выстроить позиции 
+от главноего контейнера, на флексах:
+1. Чекнуть внутри контейнера абсолютные позиции
+2. Положить кнопку внутрь формы */
 
 .popup__close-icon:hover {
   opacity: 50%;
@@ -17,7 +28,8 @@
   .popup__close-icon {
     width: 26px;
     height: 26px;
-    margin-bottom: 13px;
-    margin-right: 0px;
+    margin-top: -39px;
+    margin-left: 256px;
+    
   }
 }

@@ -1,6 +1,7 @@
 .profile__content {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 @media screen and (max-width: 583px) {
